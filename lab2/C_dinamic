@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+
+    int n;
+    printf(" n: ");
+    scanf("%d", &n);
+
+    long count = 0;
+    double S = 0.0;
+
+    double y = 1.0;
+
+    for (int i = 1; i <= n; i++) {
+
+        double sin_i = sin(i);
+        count++;
+
+        double sin_multiplication_sin = sin_i * sin_i;
+        count++;
+
+        double up = 3.0 - sin_multiplication_sin;
+        count++;
+
+        double j_plus_2 = (i) + 2.0;
+        count++;
+
+        double log_j = log(j_plus_2);
+        count++;
+
+        y = y * log_j;
+        count++;
+
+        if (y != 0.0) {
+            double z = up / y;
+            count++;
+
+            S += z;
+            count++;
+        }
+    }
+
+    printf("S = %f\n", S);
+    printf("Кол-во действий: %ld\n", count);
+
+    return 0;
+}
