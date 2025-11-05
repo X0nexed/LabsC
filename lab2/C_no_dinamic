@@ -42,13 +42,15 @@ int main() {
             double z = up / y;
             count++;
 
-            S = z;
-
+            S = S + z;
+            count++;
         }
     }
 
     printf("S = %f\n", S);
     printf("Кол-во действий: %lld\n",count);
 
+    return 0;
+}
     return 0;
 }
