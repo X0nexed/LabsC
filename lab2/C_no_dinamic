@@ -1,5 +1,5 @@
-#include <stdio.h>  // Для ввода/вывода (printf, scanf)
-#include <math.h>   // Для математических функций (sin, log, pow)
+#include <stdio.h>
+#include <math.h>   
 
 int main() {
 
